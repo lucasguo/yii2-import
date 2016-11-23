@@ -1,0 +1,31 @@
+{
+    "name": "lucasguo/yii2-import",
+    "description": "Simple import module for yii2 framework",
+    "keywords": ["import", "excel", "yii2"],
+    "type": "yii2-extension",
+    "homepage": "https://github.com/lucasguo/yii2-import/",
+    "license": "BSD-3-Clause",
+    "repositories":
+    [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lucasguo/yii2-import/"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "ext-curl": "*",
+		"phpoffice/phpexcel": "*"
+    },
+    "authors": [
+        {
+          "name": "lucasguo",
+          "email": "guoliubin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "lucasguo\\import\\": ""
+        }
+    }
+}
