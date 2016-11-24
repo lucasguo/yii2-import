@@ -66,14 +66,13 @@ class ImportForm extends Model
 
 User have uploaded one Excel file as below.
 
-| Some Description 1                          |
-| Some Description 2                          |
-| Title         | Status   | Content          |
-| ------------- | -------- | ---------------- |
-| Post 1        | New      |        Content 1 |
-| Post 2        | Approved |        Content 2 |
-|               | Approved |        Content 3 |
-| Post 3        | New      |        Content 4 |
+|| Some Description 1                            ||
+|| Some Description 2                            ||
+|| *Title*       || *Status* || *Content*        ||
+|| Post 1        || New      ||        Content 1 ||
+|| Post 2        || Approved ||        Content 2 ||
+||               || Approved ||        Content 3 ||
+|| Post 3        || New      ||        Content 4 ||
 
 Now you can use below code in the controller to help you get the file into models.
 ```php
@@ -105,7 +104,7 @@ try {
 }
 ```
 
-Now you have your models in $post. The structure of $post will be
+Now you have your models in $posts. The structure of $posts will be
 ```php
 [
 	4 => Post{title='Post 1', status=0, content='Content 1'},
