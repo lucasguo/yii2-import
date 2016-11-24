@@ -67,7 +67,8 @@ class ImportForm extends Model
 User have uploaded one Excel file as below.
 
 | Some Description 1 |          |                  |
-| Some Description 2 |          |                  |
+| ------------------ | -------- | ---------------- |
+| **Some Description 2** |          |                  |
 | *Title*            | *Status* | *Content*        |
 | Post 1             | New      |        Content 1 |
 | Post 2             | Approved |        Content 2 |
