@@ -16,6 +16,9 @@
         "yiisoft/yii2": "*",
 		"phpoffice/phpexcel": "*"
     },
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "2.*"
+    },
     "authors": [
         {
           "name": "lucasguo",
@@ -24,7 +27,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "lucasguo\\import\\": ""
+            "lucasguo\\import\\": "src/"
         }
     }
 }

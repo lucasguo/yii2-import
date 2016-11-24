@@ -15,7 +15,7 @@ class ModelGenerator extends Object implements GeneratorInterface
 			$model = new $className;
 			foreach ($importer->getColumns() as $index => $mapping) {
 				if (array_key_exists($index, $rowData)) {
-					$fieldName = $mapping->field;
+					$fieldName = $mapping->attribute;
 					$model->$fieldName = $this->getFieldValue($rowData[$index], $rowData, $mapping);
 				}
 			}

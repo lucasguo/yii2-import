@@ -39,17 +39,17 @@ class Importer extends Component
 	/**
 	 * @var array
 	 * Define the rules how the file transform into the wanted model
-	 * The rule can be simple as the field name, or a configuration array.
+	 * The rule can be simple as the attribute name, or a configuration array.
 	 * possible configuration option, please @see DataMapping
 	 * this configuration array is mapped to data columns one by one.
-	 * if the field index is different from the element index in this array, please specific colIndex attribute
+	 * if the attribute index is different from the element index in this array, please specific colIndex attribute
 	 * 
 	 * One example:
 	 * ```php
 	 * [
 	 * 	'field1',
 	 * 	[
-	 * 		'field' => 'field2'
+	 * 		'attribute' => 'field2'
 	 * 		'required' => true,
 	 * 		'colIndex' => 4,
 	 * 		'translation' => function($orgValue) {
@@ -195,7 +195,7 @@ class Importer extends Component
 		$this->_requiredCols = [];
 		foreach ($this->columnMappings as $i => $mapping) {
 			if (is_string($mapping)) {
-				$mapping = ['field' => $mapping];
+				$mapping = ['attribute' => $mapping];
 			}
 			if (isset($mapping['colIndex'])) {
 				$colIndex = $mapping['colIndex'];
