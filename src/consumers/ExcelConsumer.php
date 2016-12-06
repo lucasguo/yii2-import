@@ -24,8 +24,8 @@ class ExcelConsumer extends Object implements ConsumerInterface
 		$sheet = $objPHPExcel->getSheet();
 		$highestRow = $sheet->getHighestRow();
 		$data = [];
-		$highestCol = $this->getNameFromNumber($importer->getMaxColIndex());
-		for ($i = $importer->skipRowsCount + 1; $i < $highestRow; $i++) {
+		$highestCol = $this->getNameFromNumber($importer->getMaxColIndex() + 1);
+		for ($i = $importer->skipRowsCount + 1; $i <= $highestRow; $i++) {
 			$rowDataArray = $sheet->rangeToArray('A' . $i . ':' . $highestCol . $i);
 			$rowData = $rowDataArray[0];
 			$skip = false;

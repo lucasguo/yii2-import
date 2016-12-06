@@ -43,6 +43,7 @@ class Importer extends Component
 	 * possible configuration option, please @see DataMapping
 	 * this configuration array is mapped to data columns one by one.
 	 * if the attribute index is different from the element index in this array, please specific colIndex attribute
+	 * Please notice colIndex is 0-based.
 	 * 
 	 * One example:
 	 * ```php
